@@ -1,16 +1,12 @@
 <resources>
     <string name="app_name">WeatherAppUIDesign</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="ankara">Ankara</string>
+    <string name="ankara">ANKARA</string>
     <string name="_04_45_am">04:45 AM</string>
     <string name="desc">desc</string>
-    <string name="tuesday_24_august_2021">Sunday, 8 August 2021</string>
+    <string name="tuesday_24_august_2021">Tuesday, 24 August 2021</string>
     <string name="_23">23°</string>
-    <string name="_29">29°</string>
     <string name="_22">22°</string>
     <string name="_19">19°</string>
-    <string name="_28">28°</string>
     <string name="moon_cloud_fast_wind">Moon Cloud Fast Wind</string>
     <string name="_75">75%</string>
     <string name="_8_km_h">8 km/h</string>
@@ -28,4 +24,17 @@
     <string name="_12_00_am">12:00 AM</string>
     <string name="_24">24°</string>
     <string name="future_weather">Future Weather</string>
+    <string name="today_s_weather">Today\'s Weather</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="_25_august_2021">25 August 2021</string>
+    <string name="thursday">Thursday</string>
+    <string name="_26_august_2021">26 August 2021</string>
+    <string name="friday">Friday</string>
+    <string name="_27_august_2021">27 August 2021</string>
+    <string name="saturday">Saturday</string>
+    <string name="_28_august_2021">28 August 2021</string>
+    <string name="sunday">Sunday</string>
+    <string name="_30_august_2021">30 August 2021</string>
+    <string name="monday">Monday</string>
+    <string name="_31_august_2021">31 August 2021</string>
 </resources>

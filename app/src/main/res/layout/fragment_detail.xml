@@ -1,448 +1,466 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/detail"
-    tools:context=".DetailFragment">
 
-    <LinearLayout
-        android:id="@+id/view21"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/iv_detail_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow_back"
-            app:tint="@color/white" />
+        android:layout_height="match_parent"
+        android:background="@drawable/detail"
+        tools:context=".DetailFragment">
 
         <LinearLayout
+            android:id="@+id/view21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
+            android:layout_margin="30dp"
             android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_detail_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_sans_extrabold"
-                android:text="Today's Weather"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tv_detail_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_sans_bold"
-                android:text="Tuesday, 24 August 2021"
-                android:textColor="@color/white"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/view22"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:background="@drawable/bg_trans_for_detail"
-        android:gravity="center"
-        android:padding="5dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/view21"
-        app:layout_constraintStart_toStartOf="@id/view21"
-        app:layout_constraintTop_toBottomOf="@id/view21">
-
-        <ImageView
-            android:id="@+id/iv_detail_today_weather_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/mooncloudfastwind_details" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_detail_weather"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_23"
-                android:textColor="@color/white"
-                android:textSize="72sp" />
-
-            <TextView
-                android:id="@+id/tv_detail_weather_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_sans_black"
-                android:text="@string/moon_cloud_fast_wind"
-                android:textColor="@color/white"
-                android:textSize="11sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/view23"
-        android:background="@drawable/bg_white_for_details"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="40dp"
-        android:padding="30dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintStart_toStartOf="@id/view22"
-        app:layout_constraintEnd_toEndOf="@id/view22"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view22">
-
-        <TextView
-            android:id="@+id/tv_detail_future_weather"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/future_weather"
-            android:textSize="18sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="@font/nunito_sans_black"/>
-
-        <LinearLayout
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/iv_detail_ic1"
+                android:id="@+id/iv_detail_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/suncloudangledrain_detail"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/white"
                 android:contentDescription="@string/desc" />
-            <TextView
-                android:id="@+id/tv_detail_item1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_23"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans_black"
-                android:textColor="@color/dark_gray"/>
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wednesday"
-                    android:textColor="@color/dark_gray"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textSize="13sp"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_detail_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="25 August 2021"
-                    android:textSize="13sp"
                     android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textColor="@color/dark_gray"
-                    android:alpha="0.5"/>
+                    android:text="@string/today_s_weather"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/tuesday_24_august_2021"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/bg_trans_for_detail"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@id/view21"
+            app:layout_constraintStart_toStartOf="@id/view21"
+            app:layout_constraintTop_toBottomOf="@id/view21">
+
+            <ImageView
+                android:id="@+id/iv_detail_today_weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mooncloudfastwind_details"
+                android:contentDescription="@string/desc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detail_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_23"
+                    android:textColor="@color/white"
+                    android:textSize="72sp" />
+
+                <TextView
+                    android:id="@+id/tv_detail_weather_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/moon_cloud_fast_wind"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
             </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_list_days_detail"/>
-
         <LinearLayout
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
+            android:id="@+id/view23"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/iv_detail_ic2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/suncloudlittlerain_detail"
-                android:contentDescription="@string/desc" />
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bg_white_for_details"
+            android:orientation="vertical"
+            android:padding="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/view22"
+            app:layout_constraintStart_toStartOf="@id/view22"
+            app:layout_constraintTop_toBottomOf="@id/view22">
 
             <TextView
-                android:id="@+id/tv_detail_item2"
+                android:id="@+id/tv_detail_future_weather"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_22"
-                android:textSize="30sp"
-                android:layout_weight="1"
                 android:fontFamily="@font/nunito_sans_black"
-                android:textColor="@color/dark_gray"/>
+                android:text="@string/future_weather"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_detail_ic1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Thusday"
-                    android:textColor="@color/dark_gray"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textSize="13sp"/>
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/suncloudangledrain_detail" />
 
                 <TextView
+                    android:id="@+id/tv_detail_item1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="26 August 2021"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/_23"
                     android:textColor="@color/dark_gray"
-                    android:alpha="0.5"/>
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/wednesday"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/_25_august_2021"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_days_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_detail_ic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/suncloudlittlerain_detail" />
+
+                <TextView
+                    android:id="@+id/tv_detail_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/_22"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/thursday"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/_26_august_2021"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_days_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_detail_ic3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/bigraindrops_detail" />
+
+                <TextView
+                    android:id="@+id/tv_detail_item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/_19"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/friday"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/_27_august_2021"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_days_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_detail_ic4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/suncloudmidrain_detail" />
+
+                <TextView
+                    android:id="@+id/tv_detail_item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/_23"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/saturday"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/_28_august_2021"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_days_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_detail_ic5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/suncloudangledrain_detail" />
+
+                <TextView
+                    android:id="@+id/tv_detail_item5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/_24"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/sunday"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/_30_august_2021"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_list_days_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_detail_ic6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desc"
+                    android:src="@drawable/suncloudlittlerain_detail" />
+
+                <TextView
+                    android:id="@+id/tv_detail_item6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/_22"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/monday"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:fontFamily="@font/nunito_sans_extrabold"
+                        android:text="@string/_31_august_2021"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_list_days_detail"/>
-
-        <LinearLayout
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/iv_detail_ic3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/bigraindrops_detail"
-                android:contentDescription="@string/desc" />
-            <TextView
-                android:id="@+id/tv_detail_item3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_19"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans_black"
-                android:textColor="@color/dark_gray"/>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Friday"
-                    android:textColor="@color/dark_gray"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textSize="13sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="27 August 2021"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textColor="@color/dark_gray"
-                    android:alpha="0.5"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_list_days_detail"/>
-
-        <LinearLayout
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/iv_detail_ic4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/suncloudmidrain_detail"
-                android:contentDescription="@string/desc" />
-            <TextView
-                android:id="@+id/tv_detail_item4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_23"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans_black"
-                android:textColor="@color/dark_gray"/>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Saturday"
-                    android:textColor="@color/dark_gray"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textSize="13sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="28 August 2021"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textColor="@color/dark_gray"
-                    android:alpha="0.5"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_list_days_detail"/>
-
-        <LinearLayout
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/iv_detail_ic5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/suncloudangledrain_detail"
-                android:contentDescription="@string/desc" />
-            <TextView
-                android:id="@+id/tv_detail_item5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_24"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans_black"
-                android:textColor="@color/dark_gray"/>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sunday"
-                    android:textColor="@color/dark_gray"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textSize="13sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30 August 2021"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textColor="@color/dark_gray"
-                    android:alpha="0.5"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_list_days_detail"/>
-
-        <LinearLayout
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/iv_detail_ic6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/suncloudlittlerain_detail"
-                android:contentDescription="@string/desc" />
-            <TextView
-                android:id="@+id/tv_detail_item6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_22"
-                android:textSize="30sp"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans_black"
-                android:textColor="@color/dark_gray"/>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Monday"
-                    android:textColor="@color/dark_gray"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textSize="13sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="31 August 2021"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/nunito_sans_extrabold"
-                    android:textColor="@color/dark_gray"
-                    android:alpha="0.5"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

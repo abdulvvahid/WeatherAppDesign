@@ -7,6 +7,10 @@
     <string name="desc">desc</string>
     <string name="tuesday_24_august_2021">Sunday, 8 August 2021</string>
     <string name="_23">23°</string>
+    <string name="_29">29°</string>
+    <string name="_22">22°</string>
+    <string name="_19">19°</string>
+    <string name="_28">28°</string>
     <string name="moon_cloud_fast_wind">Moon Cloud Fast Wind</string>
     <string name="_75">75%</string>
     <string name="_8_km_h">8 km/h</string>
@@ -23,4 +27,5 @@
     <string name="_21">21°</string>
     <string name="_12_00_am">12:00 AM</string>
     <string name="_24">24°</string>
+    <string name="future_weather">Future Weather</string>
 </resources>

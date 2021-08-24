@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/detail"
@@ -99,5 +103,346 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/view23"
+        android:background="@drawable/bg_white_for_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:padding="30dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="@id/view22"
+        app:layout_constraintEnd_toEndOf="@id/view22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view22">
+
+        <TextView
+            android:id="@+id/tv_detail_future_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/future_weather"
+            android:textSize="18sp"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="@font/nunito_sans_black"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_detail_ic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/suncloudangledrain_detail"
+                android:contentDescription="@string/desc" />
+            <TextView
+                android:id="@+id/tv_detail_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_23"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_black"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 August 2021"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textColor="@color/dark_gray"
+                    android:alpha="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_days_detail"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_detail_ic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/suncloudlittlerain_detail"
+                android:contentDescription="@string/desc" />
+
+            <TextView
+                android:id="@+id/tv_detail_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_22"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_black"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thusday"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26 August 2021"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textColor="@color/dark_gray"
+                    android:alpha="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_days_detail"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_detail_ic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bigraindrops_detail"
+                android:contentDescription="@string/desc" />
+            <TextView
+                android:id="@+id/tv_detail_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_19"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_black"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27 August 2021"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textColor="@color/dark_gray"
+                    android:alpha="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_days_detail"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_detail_ic4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/suncloudmidrain_detail"
+                android:contentDescription="@string/desc" />
+            <TextView
+                android:id="@+id/tv_detail_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_23"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_black"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28 August 2021"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textColor="@color/dark_gray"
+                    android:alpha="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_days_detail"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_detail_ic5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/suncloudangledrain_detail"
+                android:contentDescription="@string/desc" />
+            <TextView
+                android:id="@+id/tv_detail_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_24"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_black"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30 August 2021"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textColor="@color/dark_gray"
+                    android:alpha="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_days_detail"/>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_detail_ic6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/suncloudlittlerain_detail"
+                android:contentDescription="@string/desc" />
+            <TextView
+                android:id="@+id/tv_detail_item6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_22"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_black"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31 August 2021"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:textColor="@color/dark_gray"
+                    android:alpha="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

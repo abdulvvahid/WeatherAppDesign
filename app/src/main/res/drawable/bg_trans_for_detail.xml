@@ -3,5 +3,5 @@
     android:id="@+id/shape_my">
     <stroke android:width="2dp" android:color="@color/white" />
     <corners android:radius="24dp" />
-    <solid android:color="#50FFFFFF" />
+    <solid android:color="#30FFFFFF" />
 </shape>

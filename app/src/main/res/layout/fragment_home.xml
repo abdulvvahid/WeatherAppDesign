@@ -117,5 +117,146 @@
 
     </FrameLayout>
 
+    <LinearLayout
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_white_for_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:padding="30dp"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_carbon_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_carbon_humidity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75%"
+                android:textSize="12sp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textSize="9sp"
+                android:alpha="0.5"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_tabler_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tabler_wind"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75%"
+                android:textSize="12sp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textSize="9sp"
+                android:alpha="0.5"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_ion_speedometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ion_speedometer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75%"
+                android:textSize="12sp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textSize="9sp"
+                android:alpha="0.5"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_round_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_visibility"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75%"
+                android:textSize="12sp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textSize="9sp"
+                android:alpha="0.5"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/nunito_sans_black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

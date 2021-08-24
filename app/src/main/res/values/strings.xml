@@ -2,4 +2,25 @@
     <string name="app_name">WeatherAppUIDesign</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ankara">Ankara</string>
+    <string name="_17_45_pm">17:45 PM</string>
+    <string name="desc">desc</string>
+    <string name="sunday_8_march_2021">Sunday, 8 March 2021</string>
+    <string name="_23">23°</string>
+    <string name="moon_cloud_fast_wind">Moon Cloud Fast Wind</string>
+    <string name="_75">75%</string>
+    <string name="_8_km_h">8 km/h</string>
+    <string name="wind">Wind</string>
+    <string name="_1011">1011</string>
+    <string name="humidity">Humidity</string>
+    <string name="_6_km">6 km</string>
+    <string name="visibility">Visibility</string>
+    <string name="today">Today</string>
+    <string name="next_7_days"><![CDATA[Next 7 Days >]]></string>
+    <string name="_06_00_am">06:00 AM</string>
+    <string name="_08_00_am">08:00 AM</string>
+    <string name="_10_00_am">10:00 AM</string>
+    <string name="_21">21°</string>
+    <string name="_12_00_am">12:00 AM</string>
+    <string name="_24">24°</string>
 </resources>

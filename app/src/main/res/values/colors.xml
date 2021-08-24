@@ -11,4 +11,6 @@
 
     <color name="bg_color">#F1F0FA</color>
     <color name="dark_gray">#2B2D2F</color>
+    <color name="random">#D4D1F0</color>
+    <color name="random_dark">#4B3EAE</color>
 </resources>

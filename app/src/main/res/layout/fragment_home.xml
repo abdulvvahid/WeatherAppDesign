@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/bg_color"
+        android:background="@drawable/home"
         tools:context=".HomeFragment">
 
         <LinearLayout
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_sans_extrabold"
                 android:text="@string/ankara"
-                android:textColor="@color/dark_gray"
+                android:textColor="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_sans_semibold"
                 android:text="@string/_04_45_am"
-                android:textColor="@color/dark_gray"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

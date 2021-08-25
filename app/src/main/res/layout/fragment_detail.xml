@@ -24,9 +24,9 @@
                 android:id="@+id/iv_detail_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
                 android:src="@drawable/ic_arrow_back"
-                app:tint="@color/white"
-                android:contentDescription="@string/desc" />
+                app:tint="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,10 +62,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="55dp"
             android:background="@drawable/bg_trans_for_detail"
+            android:focusable="true"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="5dp"
-            android:focusable="true"
             app:layout_constraintEnd_toEndOf="@id/view21"
             app:layout_constraintStart_toStartOf="@id/view21"
             app:layout_constraintTop_toBottomOf="@id/view21">
@@ -75,8 +75,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/mooncloudfastwind_details"
-                android:contentDescription="@string/desc" />
+                android:contentDescription="@string/desc"
+                android:src="@drawable/mooncloudfastwind_details" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

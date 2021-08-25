@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/home"
+        app:layoutDescription="@xml/fragment_home_xml_constraintlayout_scene"
         tools:context=".HomeFragment">
 
         <LinearLayout
@@ -120,29 +122,149 @@
 
         </FrameLayout>
 
-        <ImageView
-            android:id="@+id/iv_left_square"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+        <FrameLayout
+            android:id="@+id/view2_left"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginBottom="25dp"
             android:layout_marginEnd="50dp"
-            android:contentDescription="@string/desc"
             android:rotation="4"
-            android:src="@drawable/group13"
             app:layout_constraintEnd_toStartOf="@id/view2"
-            app:layout_constraintTop_toTopOf="@id/view2" />
+            app:layout_constraintBottom_toBottomOf="@id/view2" >
 
-        <ImageView
-            android:id="@+id/iv_right_square"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/iv_left_app_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/group13" />
+
+            <TextView
+                android:id="@+id/tv_left_date_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_white_for_date"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="8dp"
+                android:shadowRadius="10"
+                android:text="@string/monday_23_august_2021"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/iv_left_icon_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/mooncloudfastwind" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_left_weather_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/_23"
+                    android:textColor="@color/white"
+                    android:textSize="72sp" />
+
+                <TextView
+                    android:id="@+id/tv_left_weather_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/moon_cloud_fast_wind"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view2_right"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:rotation="-4"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="25dp"
-            android:contentDescription="@string/desc"
-            android:rotation="176"
-            android:src="@drawable/group13"
+            android:layout_marginBottom="25dp"
             app:layout_constraintStart_toEndOf="@id/view2"
-            app:layout_constraintTop_toTopOf="@id/view2" />
+            app:layout_constraintBottom_toBottomOf="@id/view2">
+
+            <ImageView
+                android:id="@+id/iv_right_app_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/group13" />
+
+            <TextView
+                android:id="@+id/tv_right_date_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_white_for_date"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="8dp"
+                android:shadowRadius="10"
+                android:text="@string/wednesday_25_august_2021"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/iv_right_icon_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/mooncloudfastwind" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_right_weather_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/_23"
+                    android:textColor="@color/white"
+                    android:textSize="72sp" />
+
+                <TextView
+                    android:id="@+id/tv_right_weather_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/moon_cloud_fast_wind"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
 
         <ImageView
             android:id="@+id/iv_bottom_view"
@@ -200,7 +322,7 @@
                     android:text="@string/humidity"
                     android:textColor="@color/dark_gray"
                     android:textSize="9sp"
-                    tools:ignore="SmallSp" />
+                    tools:ignore="SmallSp,TextContrastCheck" />
 
             </LinearLayout>
 
@@ -234,7 +356,7 @@
                     android:text="@string/wind"
                     android:textColor="@color/dark_gray"
                     android:textSize="9sp"
-                    tools:ignore="SmallSp" />
+                    tools:ignore="SmallSp,TextContrastCheck" />
 
             </LinearLayout>
 
@@ -268,7 +390,7 @@
                     android:text="@string/humidity"
                     android:textColor="@color/dark_gray"
                     android:textSize="9sp"
-                    tools:ignore="SmallSp" />
+                    tools:ignore="SmallSp,TextContrastCheck" />
 
             </LinearLayout>
 
@@ -302,7 +424,7 @@
                     android:text="@string/visibility"
                     android:textColor="@color/dark_gray"
                     android:textSize="9sp"
-                    tools:ignore="SmallSp" />
+                    tools:ignore="SmallSp,TextContrastCheck" />
 
             </LinearLayout>
 
@@ -342,6 +464,7 @@
             app:layout_constraintTop_toTopOf="@id/iv_arrow_forward" />
 
         <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -373,7 +496,8 @@
                         android:text="@string/_06_00_am"
                         android:textAlignment="center"
                         android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        tools:ignore="TextContrastCheck" />
 
                     <ImageView
                         android:id="@+id/iv_today_icon_1"
@@ -503,7 +627,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:contentDescription="@string/desc"
-                        android:src="@drawable/cloud3zap" />
+                        android:src="@drawable/cloud3zap"
+                        tools:ignore="ImageContrastCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -606,5 +731,5 @@
 
         </HorizontalScrollView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
 </ScrollView>

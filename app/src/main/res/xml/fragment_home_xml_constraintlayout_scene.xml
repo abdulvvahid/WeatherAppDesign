@@ -1,64 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetEnd="@+id/before"
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
-       <KeyFrameSet>
-           <KeyAttribute
-               motion:motionTarget="@+id/view2_left"
-               motion:framePosition="30"
-               android:alpha="0.5" />
-       </KeyFrameSet>
+        <KeyFrameSet>
+        </KeyFrameSet>
         <OnSwipe
-            motion:touchAnchorId="@+id/view2_left"
-            motion:dragDirection="dragRight" />
+            motion:dragDirection="dragRight"
+            motion:touchAnchorId="@+id/view2_left" />
+        <OnClick motion:targetId="@+id/view2_left" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@+id/before"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorId="@id/view2_today" />
+        <OnClick motion:targetId="@+id/view2_today" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@+id/next"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorId="@id/view2_today" />
+        <OnClick motion:targetId="@+id/view2_today" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/next"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorId="@id/view2_right" />
+        <OnClick motion:targetId="@+id/view2_right" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-    </ConstraintSet>
-
-    <ConstraintSet android:id="@+id/end">
 
         <Constraint
-            android:id="@+id/view2_right"
-            android:layout_height="1dp"
-            android:layout_width="1dp"
-            motion:layout_constraintStart_toEndOf="parent"
-            android:layout_marginStart="50dp"
-            android:visibility="invisible"/>
-
-        <Constraint
-            android:layout_height="330dp"
-            android:layout_width="238dp"
-            android:rotation="-4"
-            android:layout_marginStart="50dp"
-            android:layout_marginBottom="25dp"
-            motion:layout_constraintStart_toEndOf="@id/view2_left"
-            motion:layout_constraintBottom_toBottomOf="@id/view2_left"
-            android:id="@+id/view2" />
-
-        <Constraint
+            android:id="@+id/view2_today"
             android:layout_width="238dp"
             android:layout_height="330dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/view1"
-            android:id="@+id/view2_left"/>
+            motion:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <Constraint
+            android:id="@+id/view2_left"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="25dp"
+            android:rotation="4"
+            motion:layout_constraintBottom_toBottomOf="@id/view2_today"
+            motion:layout_constraintEnd_toStartOf="@id/view2_today" />
+
+        <Constraint
+            android:id="@+id/view2_right"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="25dp"
+            android:rotation="-4"
+            motion:layout_constraintBottom_toBottomOf="@id/view2_today"
+            motion:layout_constraintStart_toEndOf="@id/view2_today" />
 
         <Constraint
             android:id="@+id/view3"
-            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="40dp"
-            motion:layout_constraintTop_toBottomOf="@+id/view2_left"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/view2_today"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/before">
+
+        <Constraint
+            android:id="@+id/view2_right"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="50dp"
+            android:visibility="invisible"
+            motion:layout_constraintStart_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/view2_today"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="25dp"
+            android:rotation="-4"
+            motion:layout_constraintBottom_toBottomOf="@id/view2_left"
+            motion:layout_constraintStart_toEndOf="@id/view2_left" />
+
+        <Constraint
+            android:id="@+id/view2_left"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <Constraint
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/yesterday"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/view2_left" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/next">
+
+        <Constraint
+            android:id="@+id/view2_left"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="50dp"
+            android:visibility="invisible"
             motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/view2_today"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="25dp"
+            android:rotation="4"
+            motion:layout_constraintBottom_toBottomOf="@id/view2_right"
+            motion:layout_constraintEnd_toStartOf="@id/view2_right" />
+
+        <Constraint
+            android:id="@+id/view2_right"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <Constraint
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/tomorrow"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/view2_right" />
 
     </ConstraintSet>
 </MotionScene>

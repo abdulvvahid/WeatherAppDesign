@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WeatherAppUIDesign</string>
+    <string name="app_name">WeatherAppDesign</string>
     <string name="ankara">ANKARA</string>
     <string name="_04_45_am">04:45 AM</string>
     <string name="desc">desc</string>

@@ -1,4 +1,4 @@
-package com.noor.weatherappuidesign
+package com.noor.weatherappdesign
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

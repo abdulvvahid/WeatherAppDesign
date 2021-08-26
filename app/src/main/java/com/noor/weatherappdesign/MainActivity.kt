@@ -1,4 +1,4 @@
-package com.noor.weatherappuidesign
+package com.noor.weatherappdesign
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

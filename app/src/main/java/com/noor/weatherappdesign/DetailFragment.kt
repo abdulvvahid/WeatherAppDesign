@@ -1,4 +1,4 @@
-package com.noor.weatherappuidesign
+package com.noor.weatherappdesign
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.noor.weatherappuidesign.databinding.FragmentDetailBinding
+import com.noor.weatherappdesign.databinding.FragmentDetailBinding
 
 class DetailFragment : Fragment() {
 

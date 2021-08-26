@@ -52,219 +52,219 @@
 
         </LinearLayout>
 
-            <FrameLayout
-                android:id="@+id/view2_today"
-                android:layout_width="238dp"
-                android:layout_height="330dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view1">
+        <FrameLayout
+            android:id="@+id/view2_today"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1">
 
-                <ImageView
-                    android:id="@+id/iv_app_bg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:contentDescription="@string/desc"
-                    android:src="@drawable/group13" />
+            <ImageView
+                android:id="@+id/iv_app_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/group13" />
 
-                <TextView
-                    android:id="@+id/tv_date_today"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/bg_white_for_date"
-                    android:fontFamily="@font/nunito_sans_bold"
-                    android:padding="8dp"
-                    android:shadowRadius="10"
-                    android:text="@string/tuesday_24_august_2021"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="11sp" />
+            <TextView
+                android:id="@+id/tv_date_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_white_for_date"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="8dp"
+                android:shadowRadius="10"
+                android:text="@string/tuesday_24_august_2021"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp" />
 
-                <ImageView
-                    android:id="@+id/iv_icon_weather"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/desc"
-                    android:src="@drawable/mooncloudfastwind" />
+            <ImageView
+                android:id="@+id/iv_icon_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/mooncloudfastwind" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_weather_degree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/nunito_sans_bold"
-                        android:text="@string/_23"
-                        android:textColor="@color/white"
-                        android:textSize="72sp" />
-
-                    <TextView
-                        android:id="@+id/tv_weather_desc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/nunito_sans_black"
-                        android:text="@string/moon_cloud_fast_wind"
-                        android:textColor="@color/white"
-                        android:textSize="11sp" />
-
-                </LinearLayout>
-
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/view2_left"
-                android:layout_width="238dp"
-                android:layout_height="330dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginBottom="25dp"
-                android:rotation="4"
-                app:layout_constraintBottom_toBottomOf="@id/view2_today"
-                app:layout_constraintEnd_toStartOf="@id/view2_today">
-
-                <ImageView
-                    android:id="@+id/iv_left_app_bg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:contentDescription="@string/desc"
-                    android:src="@drawable/group13" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tv_left_date_today"
+                    android:id="@+id/tv_weather_degree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/bg_white_for_date"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/nunito_sans_bold"
-                    android:padding="8dp"
-                    android:shadowRadius="10"
-                    android:text="@string/monday_23_august_2021"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="11sp" />
-
-                <ImageView
-                    android:id="@+id/iv_left_icon_weather"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/desc"
-                    android:src="@drawable/mooncloudfastwind" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_left_weather_degree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/nunito_sans_bold"
-                        android:text="@string/_22"
-                        android:textColor="@color/white"
-                        android:textSize="72sp" />
-
-                    <TextView
-                        android:id="@+id/tv_left_weather_desc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/nunito_sans_black"
-                        android:text="@string/moon_cloud_fast_wind"
-                        android:textColor="@color/white"
-                        android:textSize="11sp" />
-
-                </LinearLayout>
-
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/view2_right"
-                android:layout_width="238dp"
-                android:layout_height="330dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginBottom="25dp"
-                android:rotation="-4"
-                app:layout_constraintBottom_toBottomOf="@id/view2_today"
-                app:layout_constraintStart_toEndOf="@id/view2_today">
-
-                <ImageView
-                    android:id="@+id/iv_right_app_bg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:contentDescription="@string/desc"
-                    android:src="@drawable/group13" />
+                    android:text="@string/_23"
+                    android:textColor="@color/white"
+                    android:textSize="72sp" />
 
                 <TextView
-                    android:id="@+id/tv_right_date_today"
+                    android:id="@+id/tv_weather_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/bg_white_for_date"
-                    android:fontFamily="@font/nunito_sans_bold"
-                    android:padding="8dp"
-                    android:shadowRadius="10"
-                    android:text="@string/wednesday_25_august_2021"
-                    android:textColor="@color/dark_gray"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/moon_cloud_fast_wind"
+                    android:textColor="@color/white"
                     android:textSize="11sp" />
 
-                <ImageView
-                    android:id="@+id/iv_right_icon_weather"
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/view2_left"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="25dp"
+            android:rotation="4"
+            app:layout_constraintBottom_toBottomOf="@id/view2_today"
+            app:layout_constraintEnd_toStartOf="@id/view2_today">
+
+            <ImageView
+                android:id="@+id/iv_left_app_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/group13" />
+
+            <TextView
+                android:id="@+id/tv_left_date_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_white_for_date"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="8dp"
+                android:shadowRadius="10"
+                android:text="@string/monday_23_august_2021"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/iv_left_icon_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/mooncloudfastwind" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_left_weather_degree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/desc"
-                    android:src="@drawable/mooncloudfastwind" />
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/_22"
+                    android:textColor="@color/white"
+                    android:textSize="72sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/tv_left_weather_desc"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/moon_cloud_fast_wind"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
 
-                    <TextView
-                        android:id="@+id/tv_right_weather_degree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/nunito_sans_bold"
-                        android:text="@string/_24"
-                        android:textColor="@color/white"
-                        android:textSize="72sp" />
+            </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_right_weather_desc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/nunito_sans_black"
-                        android:text="@string/moon_cloud_fast_wind"
-                        android:textColor="@color/white"
-                        android:textSize="11sp" />
+        </FrameLayout>
 
-                </LinearLayout>
+        <FrameLayout
+            android:id="@+id/view2_right"
+            android:layout_width="238dp"
+            android:layout_height="330dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="25dp"
+            android:rotation="-4"
+            app:layout_constraintBottom_toBottomOf="@id/view2_today"
+            app:layout_constraintStart_toEndOf="@id/view2_today">
 
-            </FrameLayout>
+            <ImageView
+                android:id="@+id/iv_right_app_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/group13" />
+
+            <TextView
+                android:id="@+id/tv_right_date_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_white_for_date"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="8dp"
+                android:shadowRadius="10"
+                android:text="@string/wednesday_25_august_2021"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/iv_right_icon_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/mooncloudfastwind" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_right_weather_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/_24"
+                    android:textColor="@color/white"
+                    android:textSize="72sp" />
+
+                <TextView
+                    android:id="@+id/tv_right_weather_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_sans_black"
+                    android:text="@string/moon_cloud_fast_wind"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
 
         <ImageView
             android:id="@+id/iv_bottom_view"
@@ -439,6 +439,33 @@
             android:fontFamily="@font/nunito_sans_black"
             android:text="@string/today"
             android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <TextView
+            android:id="@+id/tv_yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito_sans_black"
+            android:text="@string/yesterday"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <TextView
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito_sans_black"
+            android:text="@string/tomorrow"
+            android:textSize="16sp"
+            android:visibility="invisible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view3" />
 

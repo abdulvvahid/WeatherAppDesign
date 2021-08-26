@@ -91,6 +91,36 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/view2_today"/>
 
+        <Constraint
+            android:id="@+id/tv_yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <Constraint
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <Constraint
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/before">
@@ -133,6 +163,36 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/view2_left" />
 
+        <Constraint
+            android:id="@+id/tv_yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <Constraint
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <Constraint
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/next">
@@ -174,6 +234,37 @@
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/view2_right" />
+
+        <Constraint
+            android:id="@+id/tv_yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <Constraint
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
+        <Constraint
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginStart="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+
 
     </ConstraintSet>
 </MotionScene>

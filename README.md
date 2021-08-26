@@ -1,4 +1,4 @@
-# WeatherAppUIDesign
+# WeatherApp Design
 Weather Application with just ui
 
 <table>
